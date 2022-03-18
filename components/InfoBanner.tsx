@@ -17,9 +17,6 @@ const InfoBanner = () => {
       >
         <div className="mx-auto flex w-full max-w-screen-2xl items-start gap-6  p-3 sm:py-4 md:items-center md:px-4 lg:px-6">
           <div className="grid flex-grow items-center justify-start gap-2 md:flex md:justify-center">
-            <p className="reservoir-body text-white">
-              what's up fuckkerrrrsss
-            </p>
             <InfoModal />
           </div>
           <button onClick={() => setOpen(false)}>
