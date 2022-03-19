@@ -36,23 +36,23 @@ class MyDocument extends Document {
         {/* The optimal size is 1200 x 630 (1.91:1 ratio). */}
         <meta
           name="twitter:image"
-          content="https://www.reservoir.market/og.png"
+          content="https://freight.cargo.site/t/original/i/9d57e6617fe28e7d329ce5571331cdede9d5734ddf72d9380fb3635cc84a7ad8/Untitled_Artwork-56.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:site:domain"
-          content="https://www.reservoir.market/"
+          content="http://knny.io/"
         />
-        <meta name="twitter:url" content="https://www.reservoir.market/" />
+        <meta name="twitter:url" content="https://www.knny.io/" />
         {/* should be between 30-60 characters, with a maximum of 70 */}
         <meta
           name="twitter:title"
-          content="Reservoir Market | Open source NFT marketplace powered by Reservoir Protocol"
+          content="The Permissionless, self-deployed KNNY Marketplace."
         />
         {/* should be between 55 and 200 characters long */}
         <meta
           name="twitter:description"
-          content="Reservoir Market is an open source NFT marketplace powered by Reservoir"
+          content="The Permissionless, self-deployed KNNY Marketplace."
         />
         <meta name="twitter:site" content="@reservoir0x" />
 
