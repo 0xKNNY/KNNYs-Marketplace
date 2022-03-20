@@ -125,7 +125,7 @@ const SearchCollections: FC<Props> = ({ communityId }) => {
             <button
               onClick={() => {
                 reset()
-                setFocused(f)
+                setFocused(focused)
               }}
             >
               <FiXCircle className="absolute top-1/2 right-3 z-20 h-4 w-4 -translate-y-1/2 text-[#9CA3AF]" />
