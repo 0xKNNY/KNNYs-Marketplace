@@ -18,7 +18,6 @@ import CollectionOfferModal from './CollectionOfferModal'
 import ExploreFlex from './ExploreFlex'
 import ExploreTokens from './ExploreTokens'
 import Hero from './Hero'
-import Sidebar from './Sidebar'
 import SortMenu from './SortMenu'
 import SortMenuExplore from './SortMenuExplore'
 import TokensGrid from './TokensGrid'
@@ -315,40 +314,6 @@ const TokensMain: FC<Props> = ({
           ))}
       </Hero>
       <hr className="border-neutral-800" />
-      <div className="flex">
-        <Sidebar attributes={attributes} setTokensSize={tokens.setSize} />
-        <div className="mt-4 ml-6 flex-grow">
-          <div className="mb-10 hidden items-center justify-between md:flex">
-            <div>
-              <AttributesFlex />
-              <ExploreFlex />
-            </div>
-            <div className="flex gap-4">
-              {router.query?.attribute_key ||
-              router.query?.attribute_key === '' ? (
-                <>
-                  <SortMenuExplore setSize={collectionAttributes.setSize} />
-                  <ViewMenu />
-                </>
-              ) : (
-                <SortMenu setSize={tokens.setSize} />
-              )}
-            </div>
-          </div>
-          {router.query?.attribute_key || router.query?.attribute_key === '' ? (
-            <ExploreTokens
-              attributes={collectionAttributes}
-              viewRef={refCollectionAttributes}
-            />
-          ) : (
-            <TokensGrid
-              tokenCount={statsObj.count}
-              tokens={tokens}
-              viewRef={refTokens}
-            />
-          )}
-        </div>
-      </div>
     </>
   )
 }

@@ -19,25 +19,8 @@ const Sidebar: FC<Props> = ({ attributes, setTokensSize }) => {
   const router = useRouter()
 
   return (
-    <Accordion.Root
-      
-    >
-      
-      {attributes.data?.attributes?.map((attribute) => (
-        <Accordion.Item
-          value={`item-${attribute.key}`}
-          key={attribute.key}
-          className="overflow-hidden"
-        >
-          
-          <Accordion.Content>
-            <AttributeSelector
-              attribute={attribute}
-              setTokensSize={setTokensSize}
-            />
-          </Accordion.Content>
-        </Accordion.Item>
-      ))}
+    <Accordion.Root>
+    
     </Accordion.Root>
   )
 }
