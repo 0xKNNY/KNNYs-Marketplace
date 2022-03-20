@@ -187,7 +187,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
               </a>
             </Link>
           </article>
-          <article className="mb-0 max-w-[533px] overflow-hidden rounded-[7px] border-[1px] border-transparent bg-[#151515] p-6">
+          <article className="mb-0 max-w-[533px] overflow-hidden rounded-[7px] border-[1px] border-transparent bg-[#191919] p-6">
             <div className="grid grid-cols-2 gap-8">
               <Price
                 title="List Price"
