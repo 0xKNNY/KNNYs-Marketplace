@@ -257,7 +257,7 @@ const TokensMain: FC<Props> = ({
     <>
       <Head>
         <title>
-         KNNY`&apos;`s Marketplace :)
+         KNNYs Marketplace :)
         </title>
         <meta
           name="description"
