@@ -116,8 +116,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
     <Layout>
       <Head>
         <title>
-          {token?.token?.name || `#${token?.token?.tokenId}`} -{' '}
-          {collection.data?.collection?.collection?.name} | Reservoir Market
+          KNNY's Market :)
         </title>
         <meta
           name="description"

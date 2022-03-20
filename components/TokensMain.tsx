@@ -257,7 +257,7 @@ const TokensMain: FC<Props> = ({
     <>
       <Head>
         <title>
-          {collection.data?.collection?.collection?.name} | Reservoir Market
+         KNNY's Marketplace :)
         </title>
         <meta
           name="description"

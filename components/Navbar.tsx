@@ -25,9 +25,9 @@ const Navbar: FC<Props> = ({ communityId }) => {
               className="w-[50px] sm:block"
             />
             {title ? (
-              <span className="font-semibold">{title}</span>
+              <span className="font-bold">{title}</span>
             ) : (
-              <span className="font-['Obvia'] text-lg">reservoir.market</span>
+              <span className="font-['Obvia'] text-xl">KNNY</span>
             )}
           </a>
         </Link>
