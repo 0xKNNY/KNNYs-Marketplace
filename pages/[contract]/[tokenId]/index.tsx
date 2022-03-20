@@ -116,7 +116,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
     <Layout>
       <Head>
         <title>
-          KNNY`&apos;`s Market :)
+          KNNY&apos;s Market :)
         </title>
         <meta
           name="description"
