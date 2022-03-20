@@ -361,7 +361,7 @@ const Media: FC<{
   // VIDEO
   if (extension === 'mp4') {
     return (
-      <video className="mb-4 w-[533px]" controls>
+      <video className="mb-4 w-[533px]" controls autoPlay loop>
         <source src={animation_url} type="video/mp4" />
         Your browser does not support the
         <code>video</code> element.
