@@ -24,44 +24,43 @@ class MyDocument extends Document {
         <meta name="keywords" content="nft, ethereum, protocol" />
         <link rel="shortcut icon" type="image/svg" href="/reservoir.svg" />
         <title>
-          Reservoir Market | Open source NFT marketplace powered by Reservoir
-          Protocol
+          The permissionless, self-deployed KNNY market.
         </title>
         <meta
           name="description"
-          content="Reservoir Market is an open source NFT marketplace powered by Reservoir"
+          content="The permissionless, self-deployed KNNY market."
         />
         <meta name="keywords" content="NFT, API, Protocol" />
         {/* Twitter */}
         {/* The optimal size is 1200 x 630 (1.91:1 ratio). */}
         <meta
           name="twitter:image"
-          content="https://freight.cargo.site/t/original/i/9d57e6617fe28e7d329ce5571331cdede9d5734ddf72d9380fb3635cc84a7ad8/Untitled_Artwork-56.png"
+          content="https://freight.cargo.site/t/original/i/f9491b8f8f2cd2e5cf692b1756958c3340b6f3b81701f5216551bffa862f9eab/Untitled_Artwork-69.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:site:domain"
-          content="http://knny.io/"
+          content="http://knny.vercel.app"
         />
-        <meta name="twitter:url" content="https://www.knny.io/" />
+        <meta name="twitter:url" content="http://knny.vercel.app" />
         {/* should be between 30-60 characters, with a maximum of 70 */}
         <meta
           name="twitter:title"
-          content="The Permissionless, self-deployed KNNY Marketplace."
+          content="The permissionless, self-deployed KNNY market."
         />
         {/* should be between 55 and 200 characters long */}
         <meta
           name="twitter:description"
-          content="The Permissionless, self-deployed KNNY Marketplace."
+          content="The Permissionless, self-deployed KNNY market."
         />
-        <meta name="twitter:site" content="@reservoir0x" />
+        <meta name="twitter:site" content="@0xKNNY" />
 
         {/* OG - https://ogp.me/ */}
         {/* https://www.opengraph.xyz/ */}
         {/* should be between 30-60 characters, with a maximum of 90 */}
         <meta
           name="og:title"
-          content="Reservoir Market | Open source NFT marketplace powered by Reservoir Protocol"
+          content="The permissionless, self-deployed KNNY market."
         />
         <meta property="og:type" content="website" />
         <meta property="og:determiner" content="the" />
@@ -69,19 +68,19 @@ class MyDocument extends Document {
         {/* Make sure the important part of your description is within the first 110 characters, so it doesn't get cut off on mobile. */}
         <meta
           property="og:description"
-          content="Reservoir Market is an open source NFT marketplace powered by Reservoir"
+          content="The permissionless, self-deployed KNNY market."
         />
-        <meta property="og:site_name" content="Reservoir Market" />
-        <meta property="og:url" content="https://www.reservoir.market/" />
+        <meta property="og:site_name" content="KNNY Market" />
+        <meta property="og:url" content="https://www.knny.vercel.app/" />
         {/* The optimal size is 1200 x 630 (1.91:1 ratio). */}
         <meta
           property="og:image"
-          content="https://www.reservoir.market/og.png"
+          content="https://freight.cargo.site/t/original/i/f9491b8f8f2cd2e5cf692b1756958c3340b6f3b81701f5216551bffa862f9eab/Untitled_Artwork-69.png"
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="640" />
-        <meta property="og:image:alt" content="Reservoir Market banner" />
+        <meta property="og:image:alt" content="KNNY Market banner" />
         <body className="bg-white text-neutral-800">
           <Main />
           <NextScript />
