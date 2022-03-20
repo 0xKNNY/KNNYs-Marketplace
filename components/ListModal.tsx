@@ -249,7 +249,7 @@ const ListModal: FC<Props> = ({
             setOrderbook(['reservoir'])
             await checkWallet()
           }}
-          className="btn-primary-fill w-full"
+          className="btn-primary-fill text-white bg-neutral-800 hover:bg-white"
         >
           {token?.market?.floorSell?.value ? 'Edit Listing' : 'List for Sale'}
         </button>

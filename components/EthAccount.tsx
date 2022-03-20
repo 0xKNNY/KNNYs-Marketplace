@@ -59,7 +59,7 @@ const EthAccount: FC<Props> = ({ address, ens, title }) => {
           <div title={address}>{shrinkEns(ens.name)}</div>
         ) : (
           <div
-            className="reservoir-label-l block whitespace-nowrap font-mono"
+            className="reservoir-label-l text-white block whitespace-nowrap font-mono"
             title={address}
           >
             {shrinkAddress(address)}

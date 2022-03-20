@@ -81,7 +81,7 @@ class MyDocument extends Document {
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="640" />
         <meta property="og:image:alt" content="KNNY Market banner" />
-        <body className="bg-white text-neutral-800">
+        <body className="bg-[#121212] text-neutral-100">
           <Main />
           <NextScript />
         </body>

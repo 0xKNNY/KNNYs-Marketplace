@@ -168,7 +168,7 @@ const CancelListing: FC<Props> = ({
         <Dialog.Trigger
           disabled={waitingTx || isInTheWrongNetwork}
           onClick={execute}
-          className="btn-primary-outline mt-6"
+          className="btn-primary-outline border-neutral-800 text-neutral-700 mt-6 hover:text-white"
         >
           {waitingTx ? (
             <CgSpinner className="h-4 w-4 animate-spin" />

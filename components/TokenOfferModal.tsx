@@ -275,7 +275,7 @@ const TokenOfferModal: FC<Props> = ({ env, royalties, data, setToast }) => {
           setOrderbook(['reservoir'])
           await checkWallet()
         }}
-        className="btn-primary-outline w-full"
+        className="btn-primary-outline text-white bg-neutral-800 border-transparent w-full"
       >
         Make Offer
       </Dialog.Trigger>

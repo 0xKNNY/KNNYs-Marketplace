@@ -20,9 +20,9 @@ const Navbar: FC<Props> = ({ communityId }) => {
         <Link href="/">
           <a className="flex items-center justify-between gap-3">
             <img
-              src={logo || '/reservoir.svg'}
+              src={logo || '/face.gif'}
               alt={`${title} Logo` || 'Reservoir Logo'}
-              className="w-[25px] sm:block"
+              className="w-[50px] sm:block"
             />
             {title ? (
               <span className="font-semibold">{title}</span>

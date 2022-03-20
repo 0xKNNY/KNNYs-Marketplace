@@ -116,25 +116,16 @@ const SearchCollections: FC<Props> = ({ communityId }) => {
       }) => (
         <div
           onFocus={() => setFocused(true)}
-          onBlur={() => setFocused(false)}
+          onBlur={() => setFocused(true)}
           className="relative w-[300px] md:w-[400px]"
         >
-          <FiSearch
-            className={`absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-[#4b5563] ${
-              focused ? 'text-[#9CA3AF]' : ''
-            }`}
-          />
-          <input
-            type="text"
-            className="reservoir-label-l input-primary-outline w-full pl-9"
-            placeholder="Search for a collection"
-            {...getInputProps()}
-          />
+          
+          
           {typeof inputValue === 'string' && inputValue !== '' && (
             <button
               onClick={() => {
                 reset()
-                setFocused(false)
+                setFocused(f)
               }}
             >
               <FiXCircle className="absolute top-1/2 right-3 z-20 h-4 w-4 -translate-y-1/2 text-[#9CA3AF]" />

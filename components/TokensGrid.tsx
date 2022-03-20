@@ -47,7 +47,7 @@ const TokensGrid: FC<Props> = ({ tokens, viewRef, tokenCount }) => {
               key={`${token?.collection?.name}${idx}`}
               href={`/${token?.contract}/${token?.tokenId}`}
             >
-              <a className="group mb-6 grid self-start overflow-hidden rounded-[16px] bg-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+              <a className="group mb-6 grid self-start overflow-hidden rounded-[10px] bg-neutral-900 shadow-md transition hover:-translate-y-0.5 hover:bg-neutral-800 hover:shadow-lg">
                 <img
                   src={optimizeImage(token?.image, 250)}
                   alt={`${token?.collection?.name}`}
@@ -56,17 +56,17 @@ const TokensGrid: FC<Props> = ({ tokens, viewRef, tokenCount }) => {
                   height="250"
                 />
                 <p
-                  className="reservoir-subtitle mb-3 overflow-hidden truncate px-6 pt-4 lg:pt-3"
+                  className="reservoir-subtitle mb-3 overflow-hidden text-white truncate px-6 pt-4 lg:pt-3"
                   title={token?.name || token?.tokenId}
                 >
                   {token?.name || `#${token?.tokenId}`}
                 </p>
                 <div className="flex items-center justify-between px-6 pb-4 lg:pb-3">
                   <div>
-                    <div className="reservoir-subtitle text-gray-400">
+                    <div className="reservoir-subtitle text-white">
                       Offer
                     </div>
-                    <div className="reservoir-h6">
+                    <div className="reservoir-h6 text-white">
                       <FormatEth
                         amount={token?.topBuyValue}
                         maximumFractionDigits={4}
@@ -75,10 +75,10 @@ const TokensGrid: FC<Props> = ({ tokens, viewRef, tokenCount }) => {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="reservoir-subtitle text-gray-400">
+                    <div className="reservoir-subtitle text-white">
                       Price
                     </div>
-                    <div className="reservoir-h6">
+                    <div className="reservoir-h4 text-white">
                       <FormatEth
                         amount={token?.floorSellValue}
                         maximumFractionDigits={4}

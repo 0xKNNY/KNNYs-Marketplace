@@ -271,7 +271,7 @@ const TokensMain: FC<Props> = ({
           <Dialog.Trigger
             disabled={floor?.value === null || waitingTx || isInTheWrongNetwork}
             onClick={execute}
-            className="btn-primary-fill"
+            className="btn-primary-fill bg-transparent border border-neutral-800"
           >
             {waitingTx ? (
               <CgSpinner className="h-4 w-4 animate-spin" />
@@ -314,7 +314,7 @@ const TokensMain: FC<Props> = ({
             />
           ))}
       </Hero>
-      <hr className="border-gray-300" />
+      <hr className="border-neutral-800" />
       <div className="flex">
         <Sidebar attributes={attributes} setTokensSize={tokens.setSize} />
         <div className="mt-4 ml-6 flex-grow">

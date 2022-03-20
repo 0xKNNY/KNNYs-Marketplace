@@ -155,7 +155,7 @@ export const ListPrice = ({
 }) => {
   if (floorSellValue) {
     return (
-      <div className="reservoir-label-m flex items-center gap-2 rounded-[8px] bg-[#E2CCFF] px-2 py-0.5 text-[#111827]">
+      <div className="reservoir-label-m flex items-center gap-2 rounded-[8px] bg-[#E2CCFF] px-2 py-0.5 text-white">
         <span className="whitespace-nowrap">List Price</span>
         <div>
           <FormatEth

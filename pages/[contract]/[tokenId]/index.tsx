@@ -126,7 +126,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
         <meta name="twitter:image" content={token?.token?.image} />
         <meta property="og:image" content={token?.token?.image} />
       </Head>
-      <div className="mb-2 mt-9 grid  grid-cols-1 place-items-center gap-6 sm:mb-12 sm:grid-cols-2">
+      <div className="mb-2 mt-9 grid grid-cols-1 place-items-center gap-6 sm:mb-12 sm:grid-cols-2">
         {/* <Link href={`/collections/${collectionId}`}>
           <a className="reservoir-capitalized mt-9 flex items-center justify-self-start sm:col-span-2">
             <FiArrowLeft /> Back
@@ -140,17 +140,17 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
           /> */}
           {tokenOpenSea?.extension === null ? (
             <img
-              className="mb-4 w-[533px] rounded-2xl"
-              src={optimizeImage(token?.token?.image, 533)}
+              className="mb-4 w-[700px] rounded-[10px]"
+              src={optimizeImage(token?.token?.image, 700)}
             />
           ) : (
             <Media
               tokenOpenSea={tokenOpenSea}
-              tokenImage={optimizeImage(token?.token?.image, 533)}
+              tokenImage={optimizeImage(token?.token?.image, 700)}
             />
           )}
-          <article className="mb-6 max-w-[533px] overflow-hidden rounded-2xl border-[1px] border-gray-300 bg-white p-6">
-            <div className="reservoir-h6 mb-4">Owner</div>
+          <article className="mb-6 max-w-[533px] overflow-hidden rounded-2xl border-gray-300 bg-transparent p-6">
+            <div className="reservoir-h6 text-white mb-4">Owner</div>
             {token?.token?.owner && (
               <Link href={`/address/${token.token.owner}`}>
                 <a className="inline-block">
@@ -162,11 +162,11 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
         </div>
 
         <div className=" mb-8 self-start sm:mr-auto">
-          <article className="mb-6 max-w-[533px] overflow-hidden rounded-2xl border-[1px] border-gray-300 bg-white p-6">
-            <div className="reservoir-h2 mb-3 overflow-hidden">
+          <article className="mb-0 max-w-[533px] overflow-hidden rounded-[3px] border-[0px] border-neutral-800 bg-neutral p-6">
+            <div className="reservoir-h2 mb-3 text-white overflow-hidden">
               {token?.token?.name || `#${token?.token?.tokenId}`}
             </div>
-            <div className="reservoir-h6 mb-2">Collection</div>
+            <div className="reservoir-h6 text-white mb-2">Collection</div>
             <Link
               href={
                 mode === 'collection' ? '/' : `/collections/${collectionId}`
@@ -179,15 +179,15 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
                     50
                   )}
                   alt="collection avatar"
-                  className="h-9 w-9 rounded-full"
+                  className="h-9 w-9 rounded-full border border-neutral-700"
                 />
-                <span className="reservoir-body">
+                <span className="reservoir-body text-white">
                   {token?.token?.collection?.name}
                 </span>
               </a>
             </Link>
           </article>
-          <article className="mb-6 max-w-[533px] overflow-hidden rounded-2xl border-[1px] border-gray-300 bg-white p-6">
+          <article className="mb-0 max-w-[533px] overflow-hidden rounded-[7px] border-[1px] border-transparent bg-[#151515] p-6">
             <div className="grid grid-cols-2 gap-8">
               <Price
                 title="List Price"
@@ -309,8 +309,8 @@ const Price: FC<{ title: string; price: ReactNode }> = ({
   children,
 }) => (
   <div className="grid space-y-5">
-    <div className="reservoir-h5">{title}</div>
-    <div className="reservoir-h1">{price}</div>
+    <div className="reservoir-h5 text-white">{title}</div>
+    <div className="reservoir-h1 text-white">{price}</div>
     {children}
   </div>
 )

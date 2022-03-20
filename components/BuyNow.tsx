@@ -172,7 +172,7 @@ const BuyNow: FC<Props> = ({
             isInTheWrongNetwork
           }
           onClick={execute}
-          className="btn-primary-fill w-full"
+          className="btn-primary-fill bg-neutral-800 w-full"
         >
           {waitingTx ? (
             <CgSpinner className="h-4 w-4 animate-spin" />

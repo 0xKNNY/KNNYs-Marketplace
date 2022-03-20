@@ -33,10 +33,10 @@ const SortMenu: FC<Props> = ({ setSize }) => {
 
   return (
     <DropdownMenu.Root onOpenChange={setOpen}>
-      <DropdownMenu.Trigger className="btn-primary-outline w-[228px] justify-between px-4 py-3">
-        <span className="reservoir-label-l">{sortSelection}</span>
+      <DropdownMenu.Trigger className="btn-primary-outline border-neutral-800 w-[228px] justify-between px-4 py-3">
+        <span className="reservoir-label-l text-white">{sortSelection}</span>
         <FiChevronDown
-          className={`h-5 w-5 text-[#9CA3AF] transition-transform ${
+          className={`h-5 w-5 text-[#ffffff] transition-transform ${
             open ? 'rotate-180' : ''
           }`}
         />
@@ -45,7 +45,7 @@ const SortMenu: FC<Props> = ({ setSize }) => {
       <DropdownMenu.Content
         align="end"
         sideOffset={12}
-        className="w-48 divide-y-[1px] divide-[#D1D5DB] overflow-hidden rounded-[8px] border-[1px] border-[#D1D5DB] bg-white shadow-md  radix-side-bottom:animate-slide-down md:w-56"
+        className="w-48 divide-y-[0px] overflow-hidden rounded-[10px] border-[1px] border-neutral-800 bg-[#171717] shadow-md radix-side-bottom:animate-slide-down md:w-56"
       >
         {Object.keys(options).map((key) => (
           <DropdownMenu.Item
@@ -59,9 +59,9 @@ const SortMenu: FC<Props> = ({ setSize }) => {
               }
             }}
             disabled={sortSelection === options[key]}
-            className={`reservoir-gray-dropdown-item reservoir-h6 rounded-none ${
+            className={`reservoir-gray-dropdown-item reservoir-h6 text-white rounded-none ${
               sortSelection === options[key]
-                ? 'cursor-not-allowed bg-gray-100'
+                ? 'cursor-not-allowed bg-neutral-800'
                 : ''
             }`}
             aria-label={`Sort by ${options[key]}`}

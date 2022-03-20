@@ -16,7 +16,7 @@ const ConnectWallet: FC = () => {
   if (accountData) {
     return (
       <DropdownMenu.Root>
-        <DropdownMenu.Trigger className="btn-primary-outline normal-case">
+        <DropdownMenu.Trigger className="btn-primary-outline text-white border-neutral-800 bg-transparent normal-case">
           {loading ? (
             <div className="bg-primary-50 h-[32px] w-[115px] animate-pulse rounded"></div>
           ) : (
@@ -33,7 +33,7 @@ const ConnectWallet: FC = () => {
         <DropdownMenu.Content
           align="end"
           sideOffset={6}
-          className="w-48 space-y-1 rounded bg-white px-1.5 py-2 shadow-md  radix-side-bottom:animate-slide-down md:w-56"
+          className="w-48 space-y-1 bg-[#171717] rounded-[7px] bg-neutral-1000 border border-[1px] border-neutral-800 px-1.5 py-2 shadow-md radix-side-bottom:animate-slide-down md:w-56"
         >
           <div className="group flex w-full items-center justify-between rounded px-4 py-3 outline-none transition">
             <span>Balance </span>
@@ -43,7 +43,7 @@ const ConnectWallet: FC = () => {
           </div>
           <Link href={`/address/${accountData.address}`}>
             <DropdownMenu.Item asChild>
-              <a className="group flex w-full cursor-pointer items-center justify-between rounded px-4 py-3 outline-none transition hover:bg-neutral-100 focus:bg-neutral-100">
+              <a className="group flex w-full cursor-pointer items-center justify-between rounded px-4 py-3 outline-none transition hover:bg-neutral-800 focus:bg-neutral-800">
                 Portfolio
               </a>
             </DropdownMenu.Item>
@@ -52,7 +52,7 @@ const ConnectWallet: FC = () => {
             <button
               key={wallet.id}
               onClick={() => disconnect()}
-              className="group flex w-full cursor-pointer items-center justify-between gap-3 rounded px-4 py-3 outline-none transition hover:bg-neutral-100 focus:bg-neutral-100"
+              className="group flex w-full cursor-pointer items-center justify-between gap-3 rounded px-4 py-3 outline-none transition hover:bg-neutral-800 focus:bg-neutral-800"
             >
               <span>Disconnect</span>
               <HiOutlineLogout className="h-6 w-7" />
@@ -67,9 +67,9 @@ const ConnectWallet: FC = () => {
     <button
       key={wallet.id}
       onClick={() => connect(wallet)}
-      className="btn-primary-fill"
+      className="btn-primary-fill bg-transparent border border-neutral-800"
     >
-      Connect Wallet
+      Connect
     </button>
   )
 }
