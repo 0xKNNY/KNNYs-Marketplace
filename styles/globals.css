@@ -22,14 +22,3 @@
   padding-left: 30px; /* gutter size */
   background-clip: padding-box;
 }
-
-html {
-    cursor: url("https://freight.cargo.site/t/original/i/74afc5586a7184958ce4c806c1ae4616e0e9d29fadadf7f3677c4a66e6b8b878/Untitled_Artwork-62.png"), auto !important;
-}
-a {
-    cursor: url("https://freight.cargo.site/t/original/i/735dccd339dc950589252c5c6740a3ad007a3cc092399c5285fe2d44e8343bf8/Untitled_Artwork-65.png"), auto !important;
-}
-
-.content img {
-    cursor: url("https://freight.cargo.site/t/original/i/735dccd339dc950589252c5c6740a3ad007a3cc092399c5285fe2d44e8343bf8/Untitled_Artwork-65.png"), auto !important;
-}

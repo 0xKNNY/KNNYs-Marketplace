@@ -1,6 +1,10 @@
-# Reservoir Sample Marketplace
+# KNNY's Marketplace
 
-This repo is designed to help you quickly get started building on top of [Reservoir](https://reservoirprotocol.github.io/), a web3-native order book protocol.
+This repository is a self-deployed marketplace that I sell my 1/1 and multi-edition artworks on, using an open-source, web-3 native order book protocol and API called [Reservoir](https://reservoirprotocol.github.io/), and deployed on [Vercel](https://vercel.com). 
+
+This ensures that I'm truly decentralized in the web3 ecoysystem, and that no matter what happens with centralized marketplaces (such as censorship, delisting artworks for no reason, delayed royalties, etc.) that I don't have any of those problems because I'm the admin of my own marketplace.
+
+![Auction House Montage](https://ipfsgateway.makersplace.com/ipfs/Qmf87koZ7PsKaWMQt4rwfoZeHnFMVUBwsx7kh3aB5ZhfTj)
 
 ## Modes
 
@@ -80,3 +84,6 @@ $ npm run dev
 ### Deploy
 
 This is a Next.js app that can be easily deployed using [Vercel](https://vercel.com/)
+
+## Where else to find me
+You can find everything about my through [knny.io](https://knny.io).
