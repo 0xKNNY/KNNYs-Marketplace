@@ -31,16 +31,6 @@ const Navbar: FC<Props> = ({ communityId }) => {
             )}
           </a>
         </Link>
-        <Link href="https://knny.io/">
-          <a className="flex justify-between gap-3">
-            
-            {title ? (
-              <span className="font-regular">main site</span>
-            ) : (
-              <span className="font-['Obvia'] text-xl">main site</span>
-            )}
-          </a>
-        </Link>
         <Link href="https://github.com/kennyflaten/KNNY">
           <a className="flex justify-between gap-3">
             
