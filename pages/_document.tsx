@@ -23,6 +23,7 @@ class MyDocument extends Document {
         <meta name="description" content="Reservoir" />
         <meta name="keywords" content="nft, ethereum, protocol" />
         <link rel="shortcut icon" type="image/svg" href="/reservoir.svg" />
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <title>
           The permissionless, self-deployed KNNY market.
         </title>

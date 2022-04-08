@@ -104,7 +104,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
   const isTopBidder =
     !!accountData &&
     token?.market?.topBuy?.maker?.toLowerCase() ===
-      accountData?.address?.toLowerCase()
+    accountData?.address?.toLowerCase()
   const isListed = token?.market?.floorSell?.value !== null
   const isInTheWrongNetwork = signer && network.chain?.id !== +chainId
 
@@ -392,6 +392,12 @@ const Media: FC<{
       ></iframe>
     )
   }
-
+  // 3D
+  if (extension === 'glb' || extension === 'gltf') {
+    return (
+      <model-viewer className="mb-4 w-full" ar auto-rotate="true" ar-placement="floor" autoplay="true" src={animation_url} ar-modes="webxr scene-viewer quick-look" environment-image="#000000" shadow-intensity="1" seamless-poster camera-controls enable-pan>
+      </model-viewer>
+    )
+  }
   return null
 }
