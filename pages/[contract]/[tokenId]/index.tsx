@@ -395,7 +395,9 @@ const Media: FC<{
   // 3D
   if (extension === 'glb' || extension === 'gltf') {
     return (
-      <model-viewer className="mb-4 w-full" ar auto-rotate="true" ar-placement="floor" autoplay="true" src={animation_url} ar-modes="webxr scene-viewer quick-look" environment-image="#000000" shadow-intensity="1" seamless-poster camera-controls enable-pan>
+      <model-viewer auto-rotate="true" ar-placement="floor" ar-modes="webxr scene-viewer quick-look" 
+      environment-image="#000000" shadow-intensity="1" seamless-poster camera-controls enable-pan>
+        <source src={animation_url} type="video/mp4" />
       </model-viewer>
     )
   }
