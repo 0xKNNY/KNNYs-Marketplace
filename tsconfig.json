@@ -25,9 +25,7 @@
     "**/*.ts",
     "**/*.tsx",
     "ui/index.js",
+    "node_modules",
     "ui/buttons.js"
   ],
-  "exclude": [
-    "node_modules"
-  ]
 }
