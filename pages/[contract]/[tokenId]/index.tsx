@@ -381,7 +381,15 @@ const Media: FC<{
     )
   }
 
-  // HTML
+     // 3D
+     if (extension === 'glb' || extension === 'gltf'){
+      return (
+        <model-viewer auto-rotate="true" src={animation_url} ar-placement="floor" ar-modes="webxr scene-viewer quick-look" 
+        environment-image="neutral" shadow-intensity="1" seamless-poster camera-controls enable-pan>
+        </model-viewer>
+      ) }
+ 
+      // HTML
   if (extension === 'html' || extension === undefined) {
     return (
       <iframe
@@ -390,14 +398,6 @@ const Media: FC<{
         width="533"
         src={animation_url}
       ></iframe>
-    )
-  }
-  // 3D
-  if (extension === 'glb' || extension === 'gltf') {
-    return (
-      <model-viewer auto-rotate="true" src={animation_url} ar-placement="floor" ar-modes="webxr scene-viewer quick-look" 
-      environment-image="neutral" shadow-intensity="1" seamless-poster camera-controls enable-pan>
-      </model-viewer>
     )
   }
   return null
