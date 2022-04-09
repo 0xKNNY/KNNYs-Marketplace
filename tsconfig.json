@@ -28,4 +28,7 @@
     "node_modules",
     "ui/buttons.js"
   ],
+  "exclude": [
+    "node_modules"
+  ]
 }
