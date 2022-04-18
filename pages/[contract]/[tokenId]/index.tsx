@@ -124,6 +124,11 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
         />
         <meta name="twitter:image" content={token?.token?.image} />
         <meta property="og:image" content={token?.token?.image} />
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script
+          noModule
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+        ></script>
       </Head>
       <div className="mb-2 mt-9 grid grid-cols-1 place-items-center gap-6 sm:mb-12 sm:grid-cols-2">
         {/* <Link href={`/collections/${collectionId}`}>
@@ -137,6 +142,15 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
             className="mb-4 w-[533px] rounded-2xl"
             src={optimizeImage(token?.token?.image, 533)}
           /> */}
+          
+
+
+
+          
+
+
+
+
           {tokenOpenSea?.extension === null ? (
             <img
               className="mb-4 w-[700px] rounded-[10px]"
@@ -381,13 +395,24 @@ const Media: FC<{
     )
   }
 
-     // 3D
-     if (extension === 'glb' || extension === 'gltf'){
-      return (
-        <model-viewer auto-rotate="true" src={animation_url} ar-placement="floor" ar-modes="webxr scene-viewer quick-look" 
-        environment-image="neutral" shadow-intensity="1" seamless-poster camera-controls enable-pan>
-        </model-viewer>
-      ) }
+       // 3D
+  if (extension === 'gltf' || extension === 'glb') {
+     return (
+       <div>
+         <model-viewer
+           src={animation_url}
+           ar
+           ar-modes="webxr scene-viewer quick-look"
+           environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+           poster="/NeilArmstrong.webp"
+           seamless-poster
+           shadow-intensity="1"
+           camera-controls
+           enable-pan
+         ></model-viewer>
+       </div>
+     )
+   }
  
       // HTML
   if (extension === 'html' || extension === undefined) {
